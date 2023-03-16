@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>L4News.com</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="responsive.css">
+        
+    </head>
+    <body>
+        <div class="container">
+        <div class="header">
+            
+            <!-- header -->
+            <div class="header-logo"><span>L4</span>News.com</div>
+                <div class="header-menu">
+                    
+                    <a href="#">Ekonomi</a>
+                    <a href="#">Trending</a>
+                    <a href="#">Tech</a>
+                    <a href="#">Berita Utama</a>
+                    
+                </div>
+        </div>
+        </div>
+        <div class="main">
+            <!-- main -->
+            <div class="container">
+                <div class="carousel-container">
+                    <div class="carousel fade">
+                        <div class="nomer">
+                            1/4
+                        </div>
+                        <img src="gambar/640af60163098.jpeg">
+                        <div class="text">Polda Metro Perpanjang Masa Penahanan Mario Dandy Cs Terkait Kasus Penganiayaan D</div>
+                        <div class="tanggal">Kamis, 16/03/2023</div>
+                    </div>
+                    <div class="carousel fade">
+                        <div class="nomer">
+                            2/4
+                        </div>
+                        <img src="gambar/bakar-bendera-partai-politik-magetan_169.jpeg">
+                        <div class="text">Pria Ini Rusak dan Bakar Puluhan Bendera Parpol di Jalanan, Kenapa?</div>
+                        <div class="tanggal">Rabu, 15/03/2023</div>
+                    </div>
+                    <div class="carousel fade">
+                        <div class="nomer">
+                            3/4
+                        </div>
+                        <img src="gambar/begini-kondisi-longsor-di-empang-bogor-2-orang-meninggal.jpeg">
+                        <div class="text">7 Fakta Longsor Maut di Bogor hingga Jatuh Korban Jiwa</div>
+                        <div class="tanggal">Rabu, 15/03/2023</div>
+                    </div>
+                    <div class="carousel fade">
+                        <div class="nomer">
+                            4/4
+                        </div>
+                        <img src="gambar/erik-ten-hag_169.jpeg">
+                        <div class="text">Erik ten Hag Ungkap Penyebab MU Dibantai 0-7 Atas Liverpool</div>
+                        <div class="tanggal">Rabu, 08/03/2023</div>
+                    </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+               
+            </div>
+            <!--script carousel-->
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("carousel");
+                  
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                 
+                  slides[slideIndex-1].style.display = "block";  
+                  
+                }
+            </script>
+        </div>
+        <div class="body">
+            <!-- body -->
+            <div class="container">
+                <div class="sorotan">
+                <h1>Sorotan Berita</h1>
+                </div>
+            
+                <div class="sorotan-berita">
+                    <div class="container-berita">
+                        <div class="berita">
+                            <div class="gmbr-berita">
+                                <img src="gambar/63f301527f1fb.jpeg">
+                                <p>Trending</p>
+                            </div>
+                            <h3>Respons Kiky Saputri Saat Fotonya dan Suami Dicatut Penjual Online</h3>
+                        </div>
+                    </div>
+                    <div class="container-berita">
+                        <div class="berita">
+                            <div class="gmbr-berita">
+                                <img src="gambar/640b055e2a6e6.jpg">
+                                <p>Tech</p>
+                            </div>
+                            <h3>Resmi Dijual di Indonesia, Intip Keunggulan Oppo Reno8 T 5G</h3>
+                        </div>
+                    </div>
+                    <div class="container-berita">
+                        <div class="berita">
+                            <div class="gmbr-berita">
+                                <img src="gambar/640ff3e7f1801.jpg">
+                                <p>Ekonomi</p>
+                            </div>
+                            <h3>Jelang Ramadhan dan Lebaran, Mendag Khawatir Harga Pangan Naik</h3>
+                        </div>
+                    </div>
+                    <div class="container-berita">
+                        <div class="berita">
+                            <div class="gmbr-berita">
+                             <img src="gambar/https___asset.kgnewsroom.com_photo_pre_2023_03_07_14c5cd2f-dc4a-494d-9c30-f0982697a507_jpg.jpg">
+                                <p>Ekonomi</p>
+                            </div>
+                            <h3>Pertumbuhan Ekonomi Indonesia Diyakini Bakal Tertinggi di Asia Tenggara</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Form -->
+    
+        <div class="form">
+            <div class="container">
+                <div class="contact-form">
+                    <h3 class="section-title">Hubungi kami</h3>
+                    <p>Email (Wajib Diisi)</p>
+                    <input>
+                    <p>Kritik & Saran</p>
+                    <textarea></textarea><br><br>
+                    <input class="contact-submit" type="submit" value="Kirim">    
+                </div>
+            </div>
+        </div>
+        <!--Footer-->
+        <div class="container">
+        <div class="footer">
+                <div class="footer-logo"><span>L4</span>News.com</div>
+                <p>Copyright@L4News.com</p>
+        </div>
+        </div>
+    </body>
+</html>
